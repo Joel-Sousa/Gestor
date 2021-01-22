@@ -8,7 +8,7 @@ public class Conexao {
 	public static Connection conect() throws SQLException {
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            return DriverManager.getConnection("jdbc:mysql://localhost/db", "root", "23r0");
+            return DriverManager.getConnection("jdbc:mysql://localhost/db", "root", "senha");
         } catch (SQLException e) {
             throw new SQLException(e);
         } catch (ClassNotFoundException e1) {
